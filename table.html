@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="layout-content-folder">
+    <div class="layout-content">
+      <div class="layout-content-inner">
+        <app-breadcrumb>
+          <nav class="layout-breadcrumb">
+            <ol>
+              <li>
+                <a href="#"><i class="bi bi-house" style=" color:#B0A4A4;"></i></a>
+              </li>
+              <li class="#">/</li>
+              <li class="#">UI Kit</li>
+              <li class="#">/</li>
+              <li class="#">Table</li>
+
+            </ol>
+          </nav>
+          </app-breadcrumbs>
+
+
+
+          <div class="container">
+            <div class="col-12">
+              <div class="card" style="width: 1200px; right:40px;">
+                <h5>Filter Menu</h5>
+                <div class="table-responsive">
+                  <table class=" table table-bordered  ">
+                    <thead class="table-light">
+                      <tr>
+                        <th colspan="8">
+                          <div class="flex justify-content-between  flex-row ">
+                            <button label="save" icon="bi bi-funnel"
+                              class="p-element p-part p-button p-ripple b-outline"
+                              style=" background-color: transparent;
+                                                                                                      color: #4C63B6;
+                                                                                                      border: 1px solid;">
+                              <span class="p-button-icon p-button-icon-left bi bi-funnel" aria-hidden="true"
+                                style="    margin-right: 0.5rem"></span>
+                              <span class="p-button-label">clear</span>
+                            </button>
+                            <!-- <span class="p-input-icon-l mb-2">
+                              <i class="bi bi-search"></i> 
+                              <input type="text" inputtext placeholder="Search Keyword" class="p-part p-element input-text">
+                            </span> -->
+                            <!-- <form class="inline">
+                              <div class="input-icons">
+                            <i class="bi bi-search icon_search"></i>
+                            <input class="input-field" type="text">
+                            </div>
+                            </form> -->
+                            <div class=" p-input-icon-l mb-2">
+                              <!-- <button class="btn btn-outline-secondary mb-2" type="button" id="button-addon1"><i
+                                  class="fa fa-search"></i></button>
+                                  <span>Q</span>
+                              <input type="text" class="form-control p-part p-element input-text " placeholder="Search Keyword"
+                                aria-label="Example text with button addon" aria-describedby="button-addon1" -->
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1">
+                                    <i class="bi bi-search"></i>
+                                  </span>
+                                  <input type="text" class="form-control" placeholder="Search Keyword" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+
+
+                          </div>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Agent</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Balance</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Verified</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">James Butt</th>
+                        <td>
+                          <img src="../img/algeria.png">
+                          Algeria
+                        </td>
+                        <td>
+                          <img src="../img/ionibowcher.png">
+                          Ioni Bowcher
+                        </td>
+                        <td> 09/13/2015</td>
+                        <td> $70,663.00</td>
+                        <td> <span class="table-label-color"
+                            style=" background: #FDCEDF; color:#99627A;">UNQUALIFIED</span> </td>
+                        <td class="p-element">
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%"
+                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2">
+                          <i class="bi bi-check-circle" style="color: #2aa621;"></i>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Josephine Darakjy</th>
+                        <td>
+                          <img src="../img/egypt (2).png">
+                          Egypt
+                        </td>
+                        <td>
+                          <img src="../img/amyelsner.png">
+                          Amy Elsner
+                        </td>
+                        <td>02/09/2019</td>
+                        <td>$82,429.00</td>
+                        <td>
+                          <span class="table-label-color" style="background:#F6C391;color:#E08E6D">PROPOSAL</span>
+                        </td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0"
+                              aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2">
+                          <i class="bi bi-check-circle" style="color: #2aa621;"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Art Venere</th>
+                        <td><img src="../img/panam.png">Panama</td>
+                        <td><img src="../img/asiyajavayant.png">Asiya Javayant</td>
+                        <td>05/13/2017</td>
+                        <td> $28,334.00</td>
+                        <td>
+                          <span class="table-label-color"
+                            style="color:617A55;background-color: #A4D0A4;">QUALIFIED</span>
+                        </td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 63%"
+                              aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2">
+                          <i class="bi bi-x-circle" style="color: red;"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lenna Paprocki</th>
+                        <td>
+                          <img src="../img/solvenia.png">Slovenia
+                        </td>
+                        <td><img src="../img/xuxuefeng.png"> Xuxue Feng</td>
+                        <td>09/15/2020</td>
+                        <td>$88,521.00</td>
+                        <td>
+                          <span class="table-label-color" style="color:#6C9BCF;background:#A5C0DD;">NEW</span>
+                        </td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 37%"
+                              aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2">
+                          <i class="bi bi-x-circle" style="color: red;"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Donette Foller</th>
+                        <td><img src="../img/south-africa.png">South Africa</td>
+                        <td><img src="../img/asiyajavayant.png">Asiya Javayant</td>
+                        <td>05/20/2016</td>
+                        <td>$93,905.00</td>
+                        <td>
+                          <span class="table-label-color" style="background:#F6C391;color:#E08E6D">PROPOSAL</span>
+
+                        </td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 33%"
+                              aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2">
+                          <i class="bi bi-check-circle" style="color: #2aa621;"></i>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Simona Morasca</th>
+                        <td>
+                          <img src="../img/egypt (2).png">Egypt
+                        </td>
+                        <td><img src="../img/ivanmagalhaes.png">Ivan Magalhaes</td>
+                        <td> 02/16/2018</td>
+                        <td>$50,041.00</td>
+                        <td>
+                          <span class="table-label-color"
+                            style="color:617A55;background-color: #A4D0A4;">QUALIFIED</span>
+                        </td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 68%"
+                              aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2"><i class="bi bi-x-circle" style="color: red;"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mitsue Tollner</th>
+                        <td><img src="../img/paraguay.png">Paraguay</td>
+                        <td><img src="../img/ivanmagalhaes.png">Ivan Magalhaes</td>
+                        <td> 02/19/2018</td>
+                        <td>$58,706.00</td>
+                        <td><span class="table-label-color"
+                            style="color:#C9A7EB;background-color: #ECC9EE;">RENEWAL</span></td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 54%"
+                              aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2"><i class="bi bi-check-circle" style="color: #2aa621;"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Leota Dilliard</th>
+                        <td><img src="../img/sebia.png">Serbia</td>
+                        <td><img src="../img/onyamalimba.png">Onyama Limba</td>
+                        <td>08/13/2019</td>
+                        <td>$26,640.00</td>
+                        <td><span class="table-label-color"
+                            style="color:#C9A7EB;background-color: #ECC9EE;">RENEWAL</span></td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 69%"
+                              aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+
+                        </td>
+                        <td class="text-center mt-2"><i class="bi bi-check-circle" style="color: #2aa621;"></i></td>
+
+
+                      </tr>
+                      <tr>
+                        <th scope="row">Sage Wieser</th>
+                        <td><img src="../img/egypt (2).png">Egypt</td>
+                        <td><img src="../img/ivanmagalhaes.png">Ivan Magalhaes</td>
+                        <td>11/21/2018</td>
+                        <td>$65,369.00</td>
+                        <td><span class="table-label-color"
+                            style=" background: #FDCEDF; color:#99627A;">UNQUALIFIED</span> </td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 78%"
+                              aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2"><i class="bi bi-check-circle" style="color: #2aa621;"></i></td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">Kris Marrier</th>
+                        <td><img src="../img/mexico.png">Mexico</td>
+                        <td><img src="../img/onyamalimba.png">Onyama Limba</td>
+                        <td>07/07/2015</td>
+                        <td>$63,451.00</td>
+                        <td>
+                          <span class="table-label-color" style="background:#F6C391;color:#E08E6D">PROPOSAL</span>
+                        </td>
+                        <td>
+                          <div class="progress mt-2 " style="height:0.5rem;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 3%"
+                              aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </td>
+                        <td class="text-center mt-2"><i class="bi bi-x-circle" style="color: red;"></i></td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="col-12">
+              <div class="card" style="width: 1200px; right:40px;">
+                <h5>Frozen Columns</h5>
+                <div class="table-responsive">
+                  <table class=" table   ">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Representative</th>
+                        <th scope="col">Balance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Josephine Darakjy</th>
+                        <td>1001</td>
+                        <td><img src="../img/egypt (2).png">Egypt</td>
+                        <td>2019-02-09</td>
+                        <td>Chanay, Jeffrey A Esq</td>
+                        <td> <span class="table-label-color" style="background:#F6C391;color:#E08E6D">PROPOSAL</span>
+                        </td>
+                        <td>0</td>
+                        <td> <img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$82,429.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Graciela Ruta</th>
+                        <td> 1013</td>
+                        <td><img src="../img/chile.png">Chile</td>
+                        <td>2016-07-25</td>
+                        <td> Buckley Miller & Wright</td>
+                        <td><span class="table-label-color"
+                            style="color:#d3a31e;background-color: #FFF5B8">NEGOTIATION</span></td>
+                        <td>59</td>
+                        <td> <img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $45,250.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ezekiel Chui</th>
+                        <td>1027</td>
+                        <td><img src="../img/ireland.png">Ireland</td>
+                        <td>2016-09-24</td>
+                        <td>Sider, Donald C Esq</td>
+                        <td>
+                          <span class="table-label-color" style="color:#6C9BCF;background:#A5C0DD;">NEW</span>
+                        </td>
+                        <td>76</td>
+                        <td> <img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $60,454.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Jose Stockham</th>
+                        <td>1036</td>
+                        <td><img src="../img/italy.png">Italy</td>
+                        <td>2018-04-25</td>
+                        <td>ri State Refueler Co</td>
+                        <td>
+                          <span class="table-label-color"
+                            style="color:617A55;background-color: #A4D0A4;">QUALIFIED</span>
+                        </td>
+                        <td>77</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$94,909.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rozella Ostrosky</th>
+                        <td>1037</td>
+                        <td><img src="../img/venezuela (1).png">Venezuela</td>
+                        <td>2016-02-27</td>
+                        <td>Parkway Company</td>
+                        <td><span class="table-label-color"
+                            style=" background: #FDCEDF; color:#99627A;">UNQUALIFIED</span> </td>
+                        <td> 66</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$57,245.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dyan Oldroyd </th>
+                        <td>1041</td>
+                        <td><img src="../img/argentina.png">Argentina</td>
+                        <td>2017-02-02</td>
+                        <td>International Eyelets Inc</td>
+                        <td> <span class="table-label-color"
+                            style="color:617A55;background-color: #A4D0A4;">QUALIFIED</span> </td>
+                        <td> 5</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$50,194.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Erick Ferencz</th>
+                        <td> 1044</td>
+                        <td><img src="../img/belgium.png">Belgium</td>
+                        <td>2018-05-06</td>
+                        <td>Cindy Turner Associates</td>
+                        <td><span class="table-label-color"
+                            style=" background: #FDCEDF; color:#99627A;">UNQUALIFIED</span> </td>
+                        <td> 54</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$30,790.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sabra Uyetake</th>
+                        <td> 1052</td>
+                        <td><img src="../img/peru.png">Peru</td>
+                        <td>2018-04-12</td>
+                        <td>Lowy Limousine Service</td>
+                        <td><span class="table-label-color" style="color:#6C9BCF;background:#A5C0DD;">NEW</span></td>
+                        <td>31</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$78,527.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cecily Hollack</th>
+                        <td>1062</td>
+                        <td><img src="../img/bolvia.png">Bolivia</td>
+                        <td>2020-05-09</td>
+                        <td>Arthur A Oliver & Son Inc</td>
+                        <td><span class="table-label-color"
+                            style="color:#d3a31e;background-color: #FFF5B8">NEGOTIATION</span></td>
+                        <td>25</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $60,586.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tawna Buvens</th>
+                        <td>1065</td>
+                        <td><img src="../img/indonesia.png">Indonesia</td>
+                        <td>2018-03-20</td>
+                        <td>H H H Enterprises Inc</td>
+                        <td><span class="table-label-color" style="color:#6C9BCF;background:#A5C0DD;">NEW</span></td>
+                        <td>25</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$77,248.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Penney Weight</th>
+                        <td>1066</td>
+                        <td><img src="../img/south-africa.png">South Africa </td>
+                        <td>2020-03-03</td>
+                        <td>Hawaiian King Hotel</td>
+                        <td> <span class="table-label-color"
+                            style="color:617A55;background-color: #A4D0A4;">QUALIFIED</span></td>
+                        <td> 96</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $478.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kallie Blackwood</th>
+                        <td>1070</td>
+                        <td><img src="../img/iceland.png">Iceland </td>
+                        <td>2017-04-05</td>
+                        <td>Hawaiian King Hotel</td>
+                        <td> <span class="table-label-color"
+                            style=" background: #FDCEDF; color:#99627A;">UNQUALIFIED</span>td>
+                        <td> 25</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$13,775.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Laurel Reitler </th>
+                        <td>1076</td>
+                        <td><img src="../img/uk.png">United Kingdom </td>
+                        <td>2015-04-02</td>
+                        <td>Q A Service</td>
+                        <td> <span class="table-label-color"
+                            style="color:617A55;background-color: #A4D0A4;">QUALIFIED</span></td>
+                        <td>80</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $62,392.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Natalie Fern</th>
+                        <td> 1097</td>
+                        <td><img src="../img/canada.png">Canada</td>
+                        <td>2019-10-02 </td>
+                        <td>Kelly, Charles G Esq</td>
+                        <td> <span class="table-label-color" style="background:#F6C391;color:#E08E6D">PROPOSAL</span>
+                        </td>
+                        <td> 44</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $64,794.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Celeste Korando</th>
+                        <td>1105</td>
+                        <td><img src="../img/costa-rice.png">Costa Rica</td>
+                        <td>2020-06-18</td>
+                        <td>American Arts & Graphics</td>
+                        <td> <span class="table-label-color" style="background:#F6C391;color:#E08E6D">PROPOSAL</span>
+                        </td>
+                        <td>21</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $72,707.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Xuan Rochin</th>
+                        <td>1121</td>
+                        <td><img src="../img/colombia.png">Colombia</td>
+                        <td>2018-05-22</td>
+                        <td>Carol, Drake Sparks Esq</td>
+                        <td> <span class="table-label-color" style="background:#F6C391;color:#E08E6D">PROPOSAL</span>
+                        </td>
+                        <td> 77</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td>$48,759.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lindsey Dilello</th>
+                        <td>1122</td>
+                        <td><img src="../img/austria.png">Austria</td>
+                        <td>2017-07-18</td>
+                        <td>Biltmore Investors Bank</td>
+                        <td> <span class="table-label-color"
+                            style="color:#C9A7EB;background-color: #ECC9EE;">RENEWAL</span></td>
+                        <td> 65</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $37,568.00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kerry Theodorov</th>
+                        <td>1164</td>
+                        <td><img src="../img/romania.png">Romania/td>
+                        <td>2016-11-05</td>
+                        <td>Capitol Reporters</td>
+                        <td> <span class="table-label-color"
+                            style=" background: #FDCEDF; color:#99627A;">UNQUALIFIED</span></td>
+                        <td> 76</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $71,305.00/td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Novella Degroot</th>
+                        <td>1168 </td>
+                        <td><img src="../img/solvenia.png">Slovenia</td>
+                        <td>2017-12-19</td>
+                        <td>Evans, C Kelly Esq</td>
+                        <td> <span class="table-label-color"
+                            style=" background: #FDCEDF; color:#99627A;">UNQUALIFIED</span></td>
+                        <td> 30</td>
+                        <td><img src="../img/amyelsner.png">Amy Elsner</td>
+                        <td> $82,928.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="../JS/index.js" charset="UTF-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
