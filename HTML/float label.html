@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Label</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    >
+</head>
+
+<body>
+    <div class="layout-content-folder">
+        <div class="layout-content">
+            <div class="layout-content-inner">
+                <app-breadcrumb>
+                    <nav class="layout-breadcrumb">
+                        <ol>
+                            <li>
+                                <a href="#"><i class="bi bi-house" style=" color:#B0A4A4;"></i></a>
+                            </li>
+                            <li class="#">/</li>
+                            <li class="#">UI Kit</li>
+                            <li class="#">/</li>
+                            <li class="#">Form Lable</li>
+
+                        </ol>
+                    </nav>
+                    </app-breadcrumbs>
+                    <star-add class="star-insert">
+                        <div class="card">
+                            <h5>Float Label</h5>
+                            <p>All input text components support floating label by adding(<mark>.p-float-label</mark>)
+                                to wrapper class.</p>
+                            <!-- <div class="container p-solid">
+                            <div class=" field  col-12:md col-4">
+                                <span class="float-label">
+                                    <input type="text" id="inputext" class="input-text p-element p-part ng-untouched ng-pristine ng-valid">
+                                    <label for="inputext">Input Text</label>
+                                </span>
+                            </div>
+                            <div class="field col-12:md col-4">
+                                <span class="float-label">
+                                    <auto-star inputid="autocomplete" field="name" class="input-text p-element p-part ng-tns-c44-92 ng-star-insertedng-untouched ng-pristine ng-valid "> -->
+                            <!-- <span class="ng-tns-c44-92 autocomplete p-part  ">
+                                            <input pautofocus aria-autocomplete="list" role="searchbox" class="input-text p-element p-part" autocomplete="off" type="text" id="autocomplete">
+                                            <overlay class="p-element ng-tns-c44-92 ng-tns-c16-94  ng-star-inserted">
+
+                                            </overlay>
+                                        </span>
+                                    </auto-star>
+                                    
+                                    <label for="autocomplete">Auto Complete</label>
+                                </span>  
+                            </div>
+                            <div class="field col-12:md col-4">
+                                <span class="float-label right-icon">
+                                    <i class="bi bi-search"></i>
+                                    <input type="text" id="lefticon" class="input-text p-element p-part">
+                                    <label for="lefticon">Left Icon</label>
+                                </span>  
+                            </div>
+                            </div>
+                        </div> -->
+                            <div class="container p-solid mt-3">
+                                <div class="col-md-4 field " style="padding:14px">
+                                    <label htmlfor="inputext"></label>
+                                    <input inputtext id="inputtext" type="text" placeholder="Input Text"
+                                        class="input-text p-element p-part " style="padding:10.5px">
+                                </div>
+                                <div class="col-md-4 field" style="padding:14px">
+                                    <label htmlfor="autocomplete"></label>
+                                    <input inputtext id="autocomplete" type="text" placeholder="AutoComplete"
+                                        class="input-text p-element p-part " style="padding:10.5px">
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px; padding-top:40px;">
+
+                                    <!-- <label htmlfor="lefticon"></label>
+                                    <span>
+                                        <i class="bi bi-search"></i>
+                                    </span> 
+                                        <input inputtext id="lefticon" type="text" placeholder="Left Icon"class="input-text p-element p-part " style="padding:10.5px">  -->
+                                    <!-- 
+                                    <span class="input-group-append">
+                                        <button
+                                            class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5"
+                                            type="button">
+                                          
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span> -->
+                                    <!-- <div class="input-group">
+                                                <input class=" input-text p-element p-part " type="search"
+                                                    value="search" id="example-search-input" placeholder="Left Icon">
+                                                <span>
+                                                    <button class="btn btn-outline-secondary" type="button">
+                                                        <i class="fa fa-search"></i>
+                                                    </button>
+                                                </span>
+                                            </div> -->
+
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i
+                                                class="fa fa-search"></i></button>
+                                        <input type="text" class="form-control" placeholder="Left Icon"
+                                            aria-label="Example text with button addon" aria-describedby="button-addon1"
+                                            style="padding:10.5px">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px; padding-top:40px;">
+                                    <!-- <label htmlfor="righticon"></label>
+                                    <input inputtext id="righticon" type="text" placeholder="Right Icon"
+                                        class="input-text p-element p-part " style="padding:10.5px"> -->
+                                    <div class="input-group">
+
+                                        <input type="text" class="form-control input-text p-part p-element"
+                                            placeholder="Right Icon" aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1" style="padding:10.5px">
+                                        <button class="btn btn-outline-secondary " type="button" id="button-addon1"><i
+                                                class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px">
+                                    <label htmlfor="calender"></label>
+                                    <input inputtext id="calender" type="text" placeholder="Calender"
+                                        class="input-text p-element p-part " style="padding:10.5px">
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px">
+                                    <label htmlfor="chips"></label>
+                                    <input inputtext id="chips" type="text" placeholder="Chips"
+                                        class="input-text p-element p-part " style="padding:10.5px">
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px">
+                                    <label htmlfor="inputmask"></label>
+                                    <input inputtext id="inputmask" type="text" placeholder="inputMask"
+                                        class="input-text p-element p-part " style="padding:10.5px">
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px">
+                                    <label htmlfor="InputNumber"></label>
+                                    <input inputtext id="inputnumber" type="text" placeholder="InputNumber"
+                                        class="input-text p-element p-part " style="padding:10.5px">
+                                </div>
+                                <div class="col-md-4 field " style="padding:33px">
+                                    <!-- <span class="icon"><i class="bi bi-person"></i></span>
+                               <label htmlfor="chips"></label>
+                             <input inputtext id="chips" type="text"placeholder="Chips"class="input-text p-element p-part " style="padding:10.5px"> 
+                            </div> -->
+
+                                    <label class="visually-hidden" for="autoSizingInputGroup">Input Group</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text"><i class="bi bi-person"></i></div>
+                                        <input inputtext type="text" class="form-control input-text"
+                                            id="autoSizingInputGroup" placeholder="InputGroup" style="padding:10.5px">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 field select-menu" style="padding:14px">
+                                    <div class="select-btn inputtext " style="margin: 28px; margin-left: 2px;">
+                                        <span class="SBtn-text  ">Dropdown</span>
+                                        <i class="bi bi-chevron-down "></i>
+                                    </div>
+                                    <ul class="options input-text">
+                                        <li class="option">New york</li>
+                                        <li class="option">Rome</li>
+                                        <li class="option">Landon</li>
+                                        <li class="option">Istanbul</li>
+                                        <li class="option">Paris</li>
+                                    </ul>
+                                    <!-- <label htmlfor="InputNumber"></label>
+                              <input inputtext id="inputnumber" type="text"placeholder="InputNumber"class="input-text p-element p-part " style="padding:10.5px">  -->
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px">
+                                    <div class="select-btn inputtext " style="margin: 28px; margin-left: 2px;">
+                                        <span class="SBtn-text  ">MultSelect</span>
+                                        <i class="bi bi-chevron-down "></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 field " style="padding:14px">
+                                    <!-- <label htmlfor="InputNumber"></label>
+                              <input inputtext id="inputnumber" type="text"placeholder="InputNumber"class="input-text p-element p-part " style="padding:10.5px">  -->
+                                    <div class="form-floating" style="margin: 28px; margin-left: 2px;">
+                                        <textarea class="form-control" rows="3" cols="30"
+                                            placeholder="Leave a comment here" inputtext id="floatingTextarea"
+                                            class="input-text p-element p-text"></textarea>
+                                        <label for="floatingTextarea">Textarea</label>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="../JS/index.js" charset="UTF-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
